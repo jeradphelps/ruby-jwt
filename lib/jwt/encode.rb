@@ -35,8 +35,9 @@ module JWT
       if algorithm == 'none'
         ''
       else
-        signature = JWT::Signature.sign(algorithm, signing_input, key)
-        Encode.base64url_encode(signature)
+        # signature = 
+        JWT::Signature.sign(algorithm, signing_input, key)
+        # Encode.base64url_encode(signature)
       end
     end
 
